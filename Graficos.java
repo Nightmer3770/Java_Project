@@ -11,6 +11,8 @@ import javax.swing.JFrame;
  *
  * @author luisr
  */
+
+//Prueba
 public class Graficos extends JFrame {
     String titulo;
     String[] nombresEjes;
@@ -23,11 +25,11 @@ public class Graficos extends JFrame {
         this.datos = datos;
         this.leyendas = nombresEjes;
     }
-    // este mÈtodo es llamado autom·ticamente por Java
+    // este m√©todo es llamado autom√°ticamente por Java
     @Override
     public void paint(Graphics g) {
         super.paint(g);
-        dibujar(g); // Llama a la implementaciÛn de la subclase
+        dibujar(g); // Llama a la implementaci√≥n de la subclase
     }
     
     public void dibujar(Graphics g){
