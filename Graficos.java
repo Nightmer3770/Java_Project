@@ -7,29 +7,26 @@ package proyecto;
 import java.awt.Graphics;
 import javax.swing.JFrame;
 
-/**
- *
- * @author luisr
- */
 public class Graficos extends JFrame {
-    String titulo;
-    String[] nombresEjes;
+    String[] titulo;
     String[] leyendas;
-    int datos[];
+    int datos1[]; // datos columna 1
+    int datos2[]; // datos columna 2
+    int datos3[]; // datos columna 3
     
-    public Graficos(String titulo, String[]nombresEjes, int []datos){
-        this.titulo = titulo;
-        this.nombresEjes = nombresEjes;
-        this.datos = datos;
-        this.leyendas = nombresEjes;
+    public Graficos(String titulo [], int datos_x [], int datos_y[], int datos_z[]){
+        this.titulo=titulo;
+        this.datos1 = datos_x;
+        this.datos2 = datos_y;
+        this.datos3 = datos_z;
     }
-    // este método es llamado automáticamente por Java
     @Override
     public void paint(Graphics g) {
         super.paint(g);
-        dibujar(g); // Llama a la implementación de la subclase
+        dibujar(g); // Llama a la implementaciÃ³n de la subclase
     }
     
     public void dibujar(Graphics g){
     }
 }
+
